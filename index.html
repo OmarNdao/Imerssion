@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immerssion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3010b1eaf1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <header>
+        
+        <div class="menu_toggle">
+            <span></span> 
+        </div>
+
+        <div class="logo">
+            <p><span>Imer</span>ssion</p>
+        </div>
+        <ul class="menu">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#ENTREPRISES">Entreprise</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">Connexion</button>
+    </header>
+     
+    <section id="home">
+        <div class="left">
+            <h1>Les<span> etudiants de L'ISEP</span> de diamniadio en imerssion</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit doloremque earum, totam laudantium dolor voluptatum fugiat. Odio doloribus nostrum harum corporis. Natus omnis deleniti reiciendis illum maxime necessitatibus accusantium esse.</p>
+            
+        </div>
+        <div class="right">
+            <img src="images/accueil.png">
+        </div>
+    </section>
+
+
+
+
+
+    <section id="ENTREPRISES">
+        <h1 class="section_title">lES ENTREPRISES D'IMERSSION</h1>
+        <div class="images">
+            <ul>
+                <li class="Entreprise">
+                   <div>
+                       <img src="images/campus france.jpg" alt="">
+                   </div>
+                   <span>CAMPUS FRANCE</span>
+                   <a href="#">Voir les etudiants qui y sont</a>
+                </li>
+                <li class="">
+                    <div>
+                        <img src="images/sonatel.webp" alt="">
+                    </div>
+                    <span>SONATEL</span>
+                    <a href="#">Voir les etudiants qui y sont</a>
+                 </li>
+                 <li class="car">
+                    <div>
+                        <img src="images/senelec.png" alt="">
+                    </div>
+                    <span>SENELEC</span>
+                    <a href="#">Voir les etudiants qui y sont</a>
+                 </li>
+                 
+                 
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <h1 class="section_title">Nos Services</h1>
+        <div class="list_services">
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Emboche</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Détails</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Partenaires</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Détails</a>
+            </div>
+            <div class="service">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Offre d'emploie</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis illum natus iste, dicta maiores ipsam.</p>
+                 <a href="#" class="read_more">Détails</a>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact">
+        <h1 class="section_title">Infos</h1>
+        <div class="localisation_contact_div">
+            <div class="localisation">
+                <h3>Notre Adresse</h3>
+            </div>
+
+            <div class="form_contact">
+                <h3>Envoyer un message</h3>
+                <form action="#">
+                    <input type="text"placeholder="Nom">
+                    <input type="email"placeholder="Adresse Mail">
+                    <input type="text"placeholder="Objet">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input type="submit" value="Envoyer">
+                </form>
+            </div>
+        </div>
+    </section>
+ 
+
+    <footer>
+        <p>immerssion des etudiants de l'ISEPDD </p>
+    </footer>
+
+    <script>
+
+        var menu_toggle = document.querySelector('.menu_toggle');
+        var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive') ;
+        }
+
+    </script>
+</body>
+</html>
